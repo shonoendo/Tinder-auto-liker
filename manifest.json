@@ -1,0 +1,18 @@
+{
+  "name": "Tinder Clicker",
+  "description": "Auto Click Tinder Web",
+  "version": "0.1",
+
+  "browser_action": {
+    "name": "Toggle",
+    "default_icon": "icon_off.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts" : [{
+    "matches" : ["https://tinder.com/*"],
+    "js" : ["jquery.js","content.js"]
+  }],
+  "manifest_version": 2
+}
